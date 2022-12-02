@@ -14,22 +14,7 @@ public class UsuarioCliente extends Usuario {
     }
 
     @Override
-    public void visualizarPedidos() {
+    public void visualizarProdutos() {
     }
 
-    @Override
-    public void atenderPedidos() {
-    }
-
-    @Override
-    public void manterUsuarios() {
-    }
-
-    @Override
-    public void manterProdutos() {
-    }
-
-    @Override
-    public void manterMaquinas() {
-    }
 }

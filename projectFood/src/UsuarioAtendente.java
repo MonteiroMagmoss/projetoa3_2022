@@ -22,14 +22,11 @@ public class UsuarioAtendente extends Usuario {
     }
 
     @Override
-    public void manterUsuarios() {
+    public void visualizarUsuarios() {
     }
 
     @Override
-    public void manterProdutos() {
+    public void visualizarProdutos() {
     }
 
-    @Override
-    public void manterMaquinas() {
-    }
 }

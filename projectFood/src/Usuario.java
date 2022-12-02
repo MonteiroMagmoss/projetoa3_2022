@@ -1,5 +1,5 @@
 
-public abstract class Usuario {
+public class Usuario {
 
     private int id_usuario;
     private String nome = "";
@@ -69,20 +69,43 @@ public abstract class Usuario {
         return "Arrumar toString";
     }
 
-    public abstract void selecionarProdutos();
+    public void selecionarProdutos() {
+    }
 
-    public abstract void realizarPedido();
+    public void realizarPedido() {
+    }
 
-    public abstract void efetuarPagamento();
+    public void efetuarPagamento() {
+    }
 
-    public abstract void visualizarPedidos();
+    public void visualizarPedidos() {
+    }
 
-    public abstract void atenderPedidos();
+    public void atenderPedidos() {
+    }
 
-    public abstract void manterUsuarios();
+    public void visualizarUsuarios() {
+    }
 
-    public abstract void manterProdutos();
+    public void inserirUsuarios() {
+    }
 
-    public abstract void manterMaquinas();
+    public void deletarUsuarios() {
+    }
+
+    public void atualizarUsuarios() {
+    }
+
+    public void inserirProdutos() {
+    }
+
+    public void visualizarProdutos() {
+    }
+
+    public void deletarProdutos() {
+    }
+
+    public void manterProdutos() {
+    }
 
 }
