@@ -1,3 +1,7 @@
+package projeto.classes;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 public class UsuarioAdmin extends Usuario {
 
@@ -24,10 +28,6 @@ public class UsuarioAdmin extends Usuario {
     public void manterUsuarios() {
     }
 
-    @Override
-    public void manterProdutos() {
-    }
-
     public void manterMaquinas() {
     }
 
@@ -37,27 +37,12 @@ public class UsuarioAdmin extends Usuario {
 
     @Override
     public void inserirUsuarios() {
+
     }
 
     @Override
     public void deletarUsuarios() {
-        
-    }
 
-    @Override
-    public void atualizarUsuarios() {
-    }
-
-    @Override
-    public void inserirProdutos() {
-    }
-
-    @Override
-    public void visualizarProdutos() {
-    }
-
-    @Override
-    public void deletarProdutos() {
     }
 
 }

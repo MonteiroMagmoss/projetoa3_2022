@@ -1,3 +1,4 @@
+package projeto.classes;
 
 public class UsuarioCliente extends Usuario {
 
@@ -11,10 +12,6 @@ public class UsuarioCliente extends Usuario {
 
     @Override
     public void efetuarPagamento() {
-    }
-
-    @Override
-    public void visualizarProdutos() {
     }
 
 }
