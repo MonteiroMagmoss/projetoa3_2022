@@ -1,3 +1,5 @@
+package projeto.classes;
+
 
 public class Pedido {
 

@@ -1,8 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package telas;
+package projeto.telas;
+
+import projeto.classes.DAO;
+import projeto.classes.Usuario;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -28,12 +28,13 @@ public class TelaLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        senhaTextField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         iniciarLoginButton = new javax.swing.JButton();
         encerrarLoginButton = new javax.swing.JButton();
         loginTextField = new javax.swing.JTextField();
-        senhaTextField = new javax.swing.JTextField();
+        senhaPasswordField = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,8 +80,8 @@ public class TelaLogin extends javax.swing.JFrame {
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(loginTextField)
-                            .addComponent(senhaTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)))
+                            .addComponent(loginTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                            .addComponent(senhaPasswordField)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(134, 134, 134)
                         .addComponent(iniciarLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -97,8 +98,8 @@ public class TelaLogin extends javax.swing.JFrame {
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(senhaTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                    .addComponent(senhaPasswordField))
                 .addGap(65, 65, 65)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(iniciarLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -112,11 +113,24 @@ public class TelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void iniciarLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iniciarLoginButtonActionPerformed
-        if(loginTextField.equals("cliente") && senhaTextField.equals("cliente")){
-            FazerPedido fp = new FazerPedido();
-            fp.setVisible(true);
-            this.dispose();
+        String nome = iniciarLoginButton.getText();
+        String senha = new String(senhaPasswordField.getPassword());
+        try {
+            Usuario usuario = new Usuario(nome, senha);
+            DAO dao = new DAO();
+            if (dao.existeUsuario(usuario)) {
+                FazerPedido fp = new FazerPedido();
+                fp.setVisible(true);
+                this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Oh-Oh");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Sistema fora do ar, tente mais tarde!");
+            e.printStackTrace();
         }
+
+
     }//GEN-LAST:event_iniciarLoginButtonActionPerformed
 
     private void encerrarLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_encerrarLoginButtonActionPerformed
@@ -165,6 +179,7 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField loginTextField;
+    private javax.swing.JPasswordField senhaPasswordField;
     private javax.swing.JTextField senhaTextField;
     // End of variables declaration//GEN-END:variables
 }
