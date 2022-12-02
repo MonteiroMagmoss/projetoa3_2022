@@ -14,14 +14,13 @@ public class UsuarioAdmin extends Usuario {
     }
 
     @Override
-    public void visualziarPedidos() {
+    public void visualizarPedidos() {
     }
 
     @Override
     public void atenderPedidos() {
     }
 
-    @Override
     public void manterUsuarios() {
     }
 
@@ -29,8 +28,36 @@ public class UsuarioAdmin extends Usuario {
     public void manterProdutos() {
     }
 
-    @Override
     public void manterMaquinas() {
+    }
+
+    @Override
+    public void visualizarUsuarios() {
+    }
+
+    @Override
+    public void inserirUsuarios() {
+    }
+
+    @Override
+    public void deletarUsuarios() {
+        
+    }
+
+    @Override
+    public void atualizarUsuarios() {
+    }
+
+    @Override
+    public void inserirProdutos() {
+    }
+
+    @Override
+    public void visualizarProdutos() {
+    }
+
+    @Override
+    public void deletarProdutos() {
     }
 
 }
