@@ -37,16 +37,21 @@ public class TelaAcompanhamento extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         acom1Button.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        acom1Button.setText("Acompanhamento 1");
+        acom1Button.setText("Porção de Batatas");
 
         acom2Button.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        acom2Button.setText("Acompanhamento 2");
+        acom2Button.setText("Nuggets");
 
         acom3Button.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        acom3Button.setText("Acompanhamento 3");
+        acom3Button.setText("Mini Coxinhas");
+        acom3Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acom3ButtonActionPerformed(evt);
+            }
+        });
 
         acom4Button.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        acom4Button.setText("Acompanhamento 4");
+        acom4Button.setText("Batata Rústica");
 
         jButton7.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jButton7.setText("Voltar");
@@ -57,31 +62,30 @@ public class TelaAcompanhamento extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel1.setText("Escolha seu combo!");
+        jLabel1.setText("Escolha seu acompanhamento!");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(62, 62, 62))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(acom1Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(acom3Button, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(acom3Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(29, 29, 29)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(acom2Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(acom4Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(acom4Button, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(222, 222, 222)
+                        .addGap(270, 270, 270)
                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,6 +113,10 @@ public class TelaAcompanhamento extends javax.swing.JFrame {
         fp.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void acom3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acom3ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_acom3ButtonActionPerformed
 
     /**
      * @param args the command line arguments

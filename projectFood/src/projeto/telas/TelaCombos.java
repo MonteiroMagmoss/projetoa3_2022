@@ -36,16 +36,16 @@ public class TelaCombos extends javax.swing.JFrame {
         jLabel1.setText("Escolha seu combo!");
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton2.setText("Combo 1");
+        jButton2.setText("Combo do Dia");
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton3.setText("Combo 2");
+        jButton3.setText("Combo Família");
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton4.setText("Combo 3");
+        jButton4.setText("Combo Especial");
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton5.setText("Combo 4");
+        jButton5.setText("Combo Casal");
 
         jButton7.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jButton7.setText("Voltar");
@@ -145,7 +145,6 @@ public class TelaCombos extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
