@@ -23,57 +23,59 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="81" pref="101" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="voltarMenuAdminButton" min="-2" pref="139" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="sairMenuAdminButton" min="-2" pref="143" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="pedidosMenuAdminButton" max="32767" attributes="0"/>
-                                  <Component id="produtosMenuAdminButton" pref="174" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="editarMaquinaMenuAdminButton" max="32767" attributes="0"/>
-                                  <Component id="usuariosMenuAdminButton" min="-2" pref="191" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="81" pref="96" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="voltarMenuAdminButton" min="-2" pref="139" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="sairMenuAdminButton" min="-2" pref="143" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
-                      <Component id="visualizarCardapioMenuAdminButton" min="-2" pref="241" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="pedidosMenuAdminButton" alignment="0" max="32767" attributes="0"/>
+                          <Component id="produtosMenuAtendenteButton" alignment="0" min="-2" pref="163" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="editarMaquinaMenuAtendenteButton" alignment="0" max="32767" attributes="0"/>
+                          <Component id="usuariosMenuAtendenteButton" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
+              <Component id="visualizarCardapioMenuAtendenteButton" min="-2" pref="241" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="usuariosMenuAdminButton" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-                  <Component id="produtosMenuAdminButton" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="editarMaquinaMenuAdminButton" alignment="3" min="-2" pref="61" max="-2" attributes="0"/>
-                  <Component id="pedidosMenuAdminButton" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-              <Component id="visualizarCardapioMenuAdminButton" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace pref="55" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="voltarMenuAdminButton" pref="53" max="32767" attributes="0"/>
-                  <Component id="sairMenuAdminButton" max="32767" attributes="0"/>
+                  <Component id="pedidosMenuAdminButton" alignment="0" pref="59" max="32767" attributes="0"/>
+                  <Component id="usuariosMenuAtendenteButton" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="editarMaquinaMenuAtendenteButton" min="-2" pref="61" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="produtosMenuAtendenteButton" min="-2" pref="53" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
+              <Component id="visualizarCardapioMenuAtendenteButton" min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="voltarMenuAdminButton" alignment="0" pref="53" max="32767" attributes="0"/>
+                  <Component id="sairMenuAdminButton" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
           </Group>
@@ -88,8 +90,11 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Pedidos"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pedidosMenuAdminButtonActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="usuariosMenuAdminButton">
+    <Component class="javax.swing.JButton" name="usuariosMenuAtendenteButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="0"/>
@@ -97,10 +102,10 @@
         <Property name="text" type="java.lang.String" value="Usu&#xe1;rios"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="usuariosMenuAdminButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="usuariosMenuAtendenteButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="produtosMenuAdminButton">
+    <Component class="javax.swing.JButton" name="produtosMenuAtendenteButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="0"/>
@@ -108,10 +113,10 @@
         <Property name="text" type="java.lang.String" value="Produtos"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="produtosMenuAdminButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="produtosMenuAtendenteButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="editarMaquinaMenuAdminButton">
+    <Component class="javax.swing.JButton" name="editarMaquinaMenuAtendenteButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="0"/>
@@ -119,10 +124,10 @@
         <Property name="text" type="java.lang.String" value="Editar M&#xe1;quina"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editarMaquinaMenuAdminButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editarMaquinaMenuAtendenteButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="visualizarCardapioMenuAdminButton">
+    <Component class="javax.swing.JButton" name="visualizarCardapioMenuAtendenteButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="0"/>
@@ -130,7 +135,7 @@
         <Property name="text" type="java.lang.String" value="Visualizar Card&#xe1;pio"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="visualizarCardapioMenuAdminButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="visualizarCardapioMenuAtendenteButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="voltarMenuAdminButton">

@@ -12,6 +12,9 @@ public class Usuario {
     private String email;
     private String senha;
     private int tipo;
+    private int tipoAdm;
+    private int tipoCliente;
+    private int tipoAtendente;
     private String apelido;
 
     public Usuario() {
@@ -20,6 +23,12 @@ public class Usuario {
     public Usuario(String nome, String senha) {
         this.nome = nome;
         this.senha = senha;
+    }
+    
+    public Usuario(String nome, String senha, int tipo) {
+        this.nome = nome;
+        this.senha = senha;
+        this.tipo = tipo;
     }
 
     public Usuario(int id_usuario, String nome, String email, String senha, int tipo, String apelido) {
@@ -78,6 +87,32 @@ public class Usuario {
     public void setApelido(String apelido) {
         this.apelido = apelido;
     }
+
+    public int getTipoAdm() {
+        return tipoAdm;
+    }
+
+    public void setTipoAdm(int tipoAdm) {
+        this.tipoAdm = tipoAdm;
+    }
+
+    public int getTipoCliente() {
+        return tipoCliente;
+    }
+
+    public void setTipoCliente(int tipoCliente) {
+        this.tipoCliente = tipoCliente;
+    }
+
+    public int getTipoAtendente() {
+        return tipoAtendente;
+    }
+
+    public void setTipoAtendente(int tipoAtendente) {
+        this.tipoAtendente = tipoAtendente;
+    }
+
+    
 
     @Override
     public String toString() {
@@ -173,5 +208,16 @@ public class Usuario {
         }
     }
 
+    public void tipoUsuario() {
+        if (tipo == 1) {
+            tipoAdm = 1;
+        } else if(tipo == 2){
+            tipoAtendente = 2;
+        } else if(tipo == 3){
+            tipoCliente = 3;
+        } else {
+            JOptionPane.showMessageDialog(null, "Tipo nao encontrado");
+        }
+    }
 
 }

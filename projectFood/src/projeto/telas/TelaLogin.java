@@ -14,7 +14,7 @@ public class TelaLogin extends javax.swing.JFrame {
      * Creates new form TelaPrincipal
      */
     public TelaLogin() {
-        // super("login");
+        super("login");
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -63,6 +63,10 @@ public class TelaLogin extends javax.swing.JFrame {
                 encerrarLoginButtonActionPerformed(evt);
             }
         });
+
+        loginTextField.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        senhaPasswordField.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -113,17 +117,30 @@ public class TelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void iniciarLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iniciarLoginButtonActionPerformed
-        String nome = iniciarLoginButton.getText();
+        String login = loginTextField.getText();
         String senha = new String(senhaPasswordField.getPassword());
         try {
-            Usuario usuario = new Usuario(nome, senha);
+            Usuario usuario = new Usuario(login, senha);
             DAO dao = new DAO();
             if (dao.existeUsuario(usuario)) {
-                FazerPedido fp = new FazerPedido();
-                fp.setVisible(true);
-                this.dispose();
+                if (login.equals("admin") && senha.equals("admin123")) {
+                    TelaMenuAdm tmadm = new TelaMenuAdm();
+                    tmadm.setVisible(true);
+                    this.dispose();
+                } else if (login.equals("atendente") && senha.equals("atendente123")) {
+                    TelaMenuAtendente tmat = new TelaMenuAtendente();
+                    tmat.setVisible(true);
+                    this.dispose();
+                } else if (login.equals("cliente") && senha.equals("cliente123")) {
+                    FazerPedido fp = new FazerPedido();
+                    fp.setVisible(true);
+                    this.dispose();
+                } else{
+                    JOptionPane.showMessageDialog(null, "Usuario não encontrado");
+                }
+
             } else {
-                JOptionPane.showMessageDialog(null, "Oh-Oh");
+                JOptionPane.showMessageDialog(null, "Usuario não existe");
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Sistema fora do ar, tente mais tarde!");

@@ -15,6 +15,7 @@ public class EscolherSobremesa extends javax.swing.JFrame {
      */
     public EscolherSobremesa() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -42,7 +43,7 @@ public class EscolherSobremesa extends javax.swing.JFrame {
         jLabel1.setText("Escolha sua Sobremesa!");
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton2.setText("sobremesa 1");
+        jButton2.setText("Sobremesa 1");
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jButton3.setText("Sobremesa 2");

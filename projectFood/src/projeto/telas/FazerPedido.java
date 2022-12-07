@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package projeto.telas;
 
 /**
@@ -15,6 +11,7 @@ public class FazerPedido extends javax.swing.JFrame {
      */
     public FazerPedido() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -74,6 +71,11 @@ public class FazerPedido extends javax.swing.JFrame {
 
         acompanhamentoButton.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         acompanhamentoButton.setText("Acompanhamento");
+        acompanhamentoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acompanhamentoButtonActionPerformed(evt);
+            }
+        });
 
         voltarButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         voltarButton.setText("Voltar");
@@ -84,7 +86,12 @@ public class FazerPedido extends javax.swing.JFrame {
         });
 
         verPedidoButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        verPedidoButton.setText("Ver Pedido");
+        verPedidoButton.setText("Fazer Pedido");
+        verPedidoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verPedidoButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -150,15 +157,21 @@ public class FazerPedido extends javax.swing.JFrame {
     }//GEN-LAST:event_sanduichesButtonActionPerformed
 
     private void combosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combosButtonActionPerformed
-        // TODO add your handling code here:
+        TelaCombos tc = new TelaCombos();
+        tc.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_combosButtonActionPerformed
 
     private void bebidasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bebidasButtonActionPerformed
-        // TODO add your handling code here:
+        TelaBebidas tb = new TelaBebidas();
+        tb.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_bebidasButtonActionPerformed
 
     private void voltarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarButtonActionPerformed
-        // TODO add your handling code here:
+        TelaLogin tl = new TelaLogin();
+        tl.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_voltarButtonActionPerformed
 
     private void sobremesasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sobremesasButtonActionPerformed
@@ -166,6 +179,18 @@ public class FazerPedido extends javax.swing.JFrame {
         es.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_sobremesasButtonActionPerformed
+
+    private void verPedidoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verPedidoButtonActionPerformed
+        TelaPagamento tp = new TelaPagamento();
+        tp.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_verPedidoButtonActionPerformed
+
+    private void acompanhamentoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acompanhamentoButtonActionPerformed
+        TelaAcompanhamento ta = new TelaAcompanhamento();
+        ta.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_acompanhamentoButtonActionPerformed
 
     /**
      * @param args the command line arguments

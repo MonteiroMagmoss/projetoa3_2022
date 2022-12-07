@@ -44,7 +44,7 @@
                       <Component id="xSiriButton" min="-2" pref="170" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="42" max="32767" attributes="0"/>
+              <EmptySpace pref="39" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
@@ -94,7 +94,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Mini Burguer"/>
+        <Property name="text" type="java.lang.String" value="Mini-Burguer"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="xBacconButton">

@@ -15,6 +15,7 @@ public class EscolherLanche extends javax.swing.JFrame {
      */
     public EscolherLanche() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -41,7 +42,7 @@ public class EscolherLanche extends javax.swing.JFrame {
         jLabel1.setText("Escolha seu Lanche!");
 
         miniBurguerButton.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        miniBurguerButton.setText("Mini Burguer");
+        miniBurguerButton.setText("Mini-Burguer");
 
         xBacconButton.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         xBacconButton.setText("X-Baccon");
@@ -86,7 +87,7 @@ public class EscolherLanche extends javax.swing.JFrame {
                         .addComponent(xTudoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(77, 77, 77)
                         .addComponent(xSiriButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(voltarEscolherLancheButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)

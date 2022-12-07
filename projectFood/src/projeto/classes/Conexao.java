@@ -11,7 +11,7 @@ public class Conexao {
     private static String port = "3306";
     private static String db = "db_A3fastFood";
     private static String user = "root";
-    private static String pass = "miguel123";
+    private static String pass = "P@rquinh0s.";
 
     public static Connection obtemConexao() {
         try {

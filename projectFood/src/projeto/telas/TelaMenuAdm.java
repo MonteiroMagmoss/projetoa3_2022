@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package projeto.telas;
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,6 +14,7 @@ public class TelaMenuAdm extends javax.swing.JFrame {
      */
     public TelaMenuAdm() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -49,18 +49,43 @@ public class TelaMenuAdm extends javax.swing.JFrame {
 
         produtosMenuAdminButton.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         produtosMenuAdminButton.setText("Produtos");
+        produtosMenuAdminButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                produtosMenuAdminButtonActionPerformed(evt);
+            }
+        });
 
         editarMaquinaMenuAdminButton.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         editarMaquinaMenuAdminButton.setText("Editar Máquina");
+        editarMaquinaMenuAdminButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editarMaquinaMenuAdminButtonActionPerformed(evt);
+            }
+        });
 
         visualizarCardapioMenuAdminButton.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         visualizarCardapioMenuAdminButton.setText("Visualizar Cardápio");
+        visualizarCardapioMenuAdminButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                visualizarCardapioMenuAdminButtonActionPerformed(evt);
+            }
+        });
 
         voltarMenuAdminButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         voltarMenuAdminButton.setText("Voltar");
+        voltarMenuAdminButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                voltarMenuAdminButtonActionPerformed(evt);
+            }
+        });
 
         sairMenuAdminButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         sairMenuAdminButton.setText("Sair");
+        sairMenuAdminButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sairMenuAdminButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,10 +101,10 @@ public class TelaMenuAdm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(sairMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(pedidosMenuAdminButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(produtosMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(70, 70, 70)
+                                    .addComponent(produtosMenuAdminButton, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE))
+                                .addGap(59, 59, 59)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(editarMaquinaMenuAdminButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(usuariosMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))))
@@ -92,16 +117,13 @@ public class TelaMenuAdm extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(59, 59, 59)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pedidosMenuAdminButton, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
-                    .addComponent(usuariosMenuAdminButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addComponent(editarMaquinaMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(produtosMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(usuariosMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(produtosMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(55, 55, 55)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(editarMaquinaMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pedidosMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50)
                 .addComponent(visualizarCardapioMenuAdminButton, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
@@ -115,8 +137,36 @@ public class TelaMenuAdm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usuariosMenuAdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosMenuAdminButtonActionPerformed
-        // TODO add your handling code here:
+        EditarUsuarios eu = new EditarUsuarios();
+        eu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_usuariosMenuAdminButtonActionPerformed
+
+    private void sairMenuAdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairMenuAdminButtonActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_sairMenuAdminButtonActionPerformed
+
+    private void voltarMenuAdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarMenuAdminButtonActionPerformed
+        TelaLogin tl = new TelaLogin();
+        tl.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_voltarMenuAdminButtonActionPerformed
+
+    private void editarMaquinaMenuAdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarMaquinaMenuAdminButtonActionPerformed
+        JOptionPane.showMessageDialog(null, "Esta funcionalidade nao esta funcionando no momento");
+    }//GEN-LAST:event_editarMaquinaMenuAdminButtonActionPerformed
+
+    private void produtosMenuAdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_produtosMenuAdminButtonActionPerformed
+        TelaEditarProduto tep = new TelaEditarProduto();
+        tep.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_produtosMenuAdminButtonActionPerformed
+
+    private void visualizarCardapioMenuAdminButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarCardapioMenuAdminButtonActionPerformed
+        TelaVisualizarCardapio tvc = new TelaVisualizarCardapio();
+        tvc.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_visualizarCardapioMenuAdminButtonActionPerformed
 
     /**
      * @param args the command line arguments
